@@ -1,0 +1,15 @@
+
+//general
+@import './general/reset.scss';
+@import './general/variable.scss';
+
+//layout
+@import './layout/footer.scss';
+@import'./layout/header.scss';
+
+//paginas
+@import'./paginas/contactos.scss';
+@import'./paginas/descuentos.scss';
+@import'./paginas/importaciones.scss';
+@import'./paginas/index.scss';
+@import'./paginas/noticias.scss';

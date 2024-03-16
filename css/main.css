@@ -1,0 +1,640 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+footer {
+  background-color: #000;
+  color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+footer.hoover {
+  transform: skewX(10deg);
+  transition: all 1s ease;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: rgb(250, 248, 248);
+  text-decoration: none;
+}
+header li a {
+  text-decoration: none;
+  color: inherit;
+}
+header .list-item {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding: 12px;
+}
+@media (max-width: 480px) {
+  header .list-item header .list-item {
+    font-size: 14px;
+    padding: 8px 4px;
+    color: black;
+  }
+}
+header .list-item a {
+  color: rgb(250, 247, 247);
+}
+header .logo a {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 30px;
+  padding: 12px 24px;
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  header .logo a {
+    font-size: 18px;
+    padding: 8px 6px;
+  }
+}
+
+.dropdown-menu .list-item a {
+  color: black;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 75px;
+  right: 0;
+  left: auto;
+  background-color: grey;
+}
+@media (max-width: 480px) {
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+.dropdown-menu .show {
+  left: auto;
+}
+@media (max-width: 480px) {
+  .dropdown-menu .show {
+    left: auto;
+  }
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: black;
+  margin-left: 300px;
+}
+
+#hero {
+  height: 50vh;
+  background-image: url(../paginas/imagenes/S7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 45%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  #hero {
+    padding: 0px 40px;
+  }
+}
+#hero h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+  }
+}
+#hero p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+#hero a {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: brown;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+}
+
+#redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 45px;
+  font-size: small;
+}
+@media (max-width: 480px) {
+  #redes {
+    height: auto;
+    flex-direction: column;
+  }
+}
+#redes h3 {
+  color: grey;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 480px) {
+  #redes h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+}
+#redes .archivo-redes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.red {
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .red {
+    width: unset;
+  }
+}
+.red:hover {
+  transform: translateY(-50px);
+}
+.red .archivo-redes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.red .red h2 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  vertical-align: middle; /* Puedes ajustar este valor según tu preferencia */
+}
+.red img {
+  width: 200px;
+  height: auto;
+}
+.red h3 {
+  margin-top: 0;
+  vertical-align: small;
+}
+
+.archivo-redes .red {
+  width: 30%;
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  .archivo-redes .red {
+    width: unset;
+    text-align: justify;
+  }
+}
+
+#productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 45px;
+  font-size: small;
+}
+#productos h2 {
+  color: grey;
+  font-weight: 600;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 480px) {
+  #productos h2 {
+    font-size: 60px;
+  }
+}
+#productos .archivo-descuentos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  #productos .archivo-descuentos {
+    flex-direction: column;
+  }
+}
+
+.producto {
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .producto {
+    width: unset;
+  }
+}
+.producto:hover {
+  transform: translateY(-50px);
+}
+.producto img {
+  width: 200px;
+  height: auto;
+}
+.producto h3 {
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.archivo-descuentos .producto {
+  width: 20%;
+}
+@media (max-width: 480px) {
+  .archivo-descuentos .producto {
+    width: unset;
+  }
+}
+
+#hero2 {
+  height: 50vh;
+  background-image: url(../paginas/imagenes/GOLF3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 45%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero2 h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+#hero2 p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+#hero2 a {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: brown;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.producto {
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .producto {
+    width: unset;
+  }
+}
+.producto:hover {
+  transform: translateY(-50px);
+}
+
+#importados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 45px;
+  font-size: small;
+}
+#importados h2 {
+  color: grey;
+  font-weight: 600;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 480px) {
+  #importados h2 {
+    font-size: 58px;
+  }
+}
+#importados .archivo-importados {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  #importados .archivo-importados {
+    flex-direction: column;
+  }
+}
+
+.importado {
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .importado {
+    width: unset;
+  }
+}
+.importado:hover {
+  transform: translateY(-50px);
+}
+.importado img {
+  width: 200px;
+  height: auto;
+}
+.importado h3 {
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.archivo-importados .importado {
+  width: 20%;
+}
+@media (max-width: 480px) {
+  .archivo-importados .importado {
+    width: unset;
+  }
+}
+
+#hero2 {
+  height: 50vh;
+  background-image: url(../paginas/imagenes/GOLF3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 45%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero2 h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+#hero2 p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+#hero2 a {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: brown;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+}
+
+#hero {
+  height: 50vh;
+  background-image: url(../paginas/imagenes/S7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 45%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  #hero {
+    padding: 0px 40px;
+  }
+}
+#hero h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+  }
+}
+#hero p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+#hero a {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: brown;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 45px;
+  font-size: small;
+}
+#sponsors h2 {
+  color: grey;
+  font-weight: 600;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 480px) {
+  #sponsors h2 {
+    font-size: 28px;
+  }
+}
+#sponsors .archivo-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  #sponsors .archivo-sponsors {
+    flex-direction: column;
+  }
+}
+
+.sponsor {
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .sponsor {
+    width: unset;
+  }
+}
+.sponsor:hover {
+  transform: translateY(-50px);
+}
+.sponsor img {
+  width: 200px;
+  height: auto;
+}
+.sponsor h3 {
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.archivo-sponsors .sponsor {
+  width: 20%;
+}
+@media (max-width: 480px) {
+  .archivo-sponsors .sponsor {
+    width: unset;
+    margin-bottom: 24px;
+  }
+}
+
+#novedades {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 45px;
+  font-size: small;
+}
+#novedades h2 {
+  color: grey;
+  font-weight: 600;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 480px) {
+  #novedades h2 {
+    font-size: 44px;
+  }
+}
+#novedades .archivo-novedades {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  #novedades .archivo-novedades {
+    flex-direction: column;
+  }
+}
+
+.novedad {
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 480px) {
+  .novedad {
+    width: unset;
+  }
+}
+.novedad:hover {
+  transform: translateY(-50px);
+}
+.novedad img {
+  width: 200px;
+  height: auto;
+}
+.novedad h3 {
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.archivo-novedades .novedad {
+  width: 20%;
+}
+@media (max-width: 480px) {
+  .archivo-novedades .novedad {
+    width: unset;
+  }
+}
+
+#hero2 {
+  height: 50vh;
+  background-image: url(../paginas/imagenes/GOLF3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 45%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero2 h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+#hero2 p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+#hero2 a {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: brown;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=main.css.map */

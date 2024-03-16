@@ -1,0 +1,99 @@
+@mixin media-query-mobile{
+    @media(max-width:480px){
+        @content;
+    }
+}
+
+
+header{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        color: rgb(250, 248, 248);
+        text-decoration: none;
+    }li a {
+        text-decoration: none; 
+        color: inherit;
+    }.list-item{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        padding: 12px;
+        @include media-query-mobile(){
+            header .list-item{
+                font-size: 14px;
+                padding: 8px 4px;
+                color: black;
+        }
+    }
+    }.list-item a {
+        color: rgb(250, 247, 247);
+    }.logo a{
+    font-family:'Dela Gothic One',sans-serif;;
+        font-size: 30px;
+        padding: 12px 24px;
+        font-weight: 500;
+        @include media-query-mobile(){
+            font-size: 18px;
+            padding: 8px 6px;
+        }
+    }
+
+}
+//@if $modo == 'oscuro'{
+//   header{
+//        background-color: black;
+//   }
+//}@else{
+//    header{
+//        background-color: white;
+//    }
+//}
+
+.dropdown-menu .list-item a {
+    color: black;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: white;
+}
+
+
+.dropdown-menu {
+    position: fixed;
+    top: 75px; 
+    right: 0;
+    left: auto;
+    background-color: grey;
+    @include media-query-mobile(){
+        right: 0;
+        left: auto;
+    }
+
+
+    .show {
+        left: auto;
+        @include media-query-mobile(){
+            left: auto; 
+        }
+    }
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: black;
+    margin-left: 300px;
+}
